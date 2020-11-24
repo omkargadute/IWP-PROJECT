@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="manual.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         html{
+    scroll-behavior: smooth;
+}
+        .zoom{
+            transition: transform .2s;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(231, 228, 176);
+        }
+        .zoom:hover {
+  -ms-transform: scale(1.75); 
+  -webkit-transform: scale(1.75); 
+  transform: scale(1.75); 
+}
+    </style>
+</head>
+<body style="background-color: rgb(255, 214, 153);">
+    <ul style="background-color: black; opacity:0.6 ; color: rgb(255, 218, 153); font-size: x-large; padding-top: 20px; ">
+        <li style="display:inline; text-align: center;" ><a style="background-color: black; color: rgb(255, 255, 255); padding-left:10px" >Sandwich-Builder</li> 
+        
+        <li style="display:inline; text-align: center;" ><a style="background-color: black; color: rgb(255, 255, 255); padding-left:400px" href="landing.html"><i class="fa fa-home fa-fw"></i> Home</a></li> 
+        <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:30px" href="about.html"><i class="fa fa-book"></i> About</a></li>
+        <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:30px" href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+        <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:30px" href="#cart"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+        <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:30px" href="login.html"><i class="fa fa-user"></i>Login</a></li>
+    <br><br>
+    </ul>
+    
+    <h2 style="color: ghostwhite; text-align: center;">Customise Your Own Sandwich</h2>
+    <form action="send_data.php" method="post">
+        <table class="table-container">
+            <tr class="bread">
+                <td class="cell">Choose Bread</td>
+                <td class="cell"> 
+                    <img class="zoom" src="https://www.mystoryinrecipes.com/uploads/4/4/9/3/44938739/622566346.JPG" alt=""><br><a class="title"> Grain Honey</a><br> Oat</a><br><a class="price"> Rs.45<br></a>
+                    <input class="click" type="radio" name="bread" id="bread1" value="Grain Honey">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://www.thespruceeats.com/thmb/pgq9Se4Et95g6BRsJY8BdV9CqKg=/3986x2657/filters:fill(auto,1)/jalapeno-cheddar-quick-bread-4686381-final-3e45dc6acda445f7ad1cd6cf40b6ea25.jpg" alt=""><br><a class="title"> Jalapeño Cheese Bread</a><br><a class="price"> Rs.40<br></a>
+                    <input type="radio" class="click" name="bread" id="bread2" value="Jalapeño Cheese Bread"> </td>
+                <td class="cell"> 
+                    <img class="zoom" src="https://i.pinimg.com/originals/84/21/c1/8421c1c8157e1fa57ee0c88e65d3402e.jpg" alt=""><br><a class="title"> Monterey Cheddar Bread</a><br><a class="price"> Rs.40<br></a>
+                    <input type="radio" name="bread" class="click" id="bread3" value="Monterey Cheddar Bread" > </td>
+                <td class="cell"> <br>
+                    <img class="zoom" src="https://mywaytocook.com/wp-content/uploads/DSC_0415_alt-1.jpg" alt=""><a class="title"> Parmesan Oregano</a><br>Rs.40<br></a>
+                    <input class="click" type="radio" name="bread" id="bread4" value="Parmesan Oregano"> </td>
+                <td class="cell">
+                    <img class="zoom" src="https://foodal.com/wp-content/uploads/2014/09/roasted-garlic-bread-comfort-food.jpg" alt=""><a class="title"> Roasted Garlic<br>Bread</a><br><a class="price"> Rs.45<br>   </a>
+                    <input class="click" type="radio" name="bread" id="bread5" value="Roasted Garlic"> </td>
+                <td class="cell"> <br>                
+                    <img class="zoom" src="https://www.recipegirl.com/wp-content/uploads/2007/01/Italian-Bread.jpg" alt=""><a class="title"> Rosemary Sea Salt<br>Bread</a><br><a class="price"> Rs.40<br></a>
+                    <input class="click" type="radio" name="bread" id="bread6" value="Rosemary Sea Salt"> </td>
+            </tr>
+            <tr class="sauce">
+                <td class="cell">Choose Sauce</td>
+                <td class="cell">
+                    <img class="zoom" src="https://i.pinimg.com/originals/2a/44/b4/2a44b49703e7ba74d252e990510dd1fe.jpg" alt=""><br><a class="title"> Chipotle Southwest</a><br><a class="price"> Rs.20<br></a>
+                    <input class="click" type="checkbox" name="Sauce" id="sauce1" value="Chipotle Southwest">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/10/7/0/FNK_Honey-Mustard-Dressing_s4x3.jpg.rend.hgtvcom.826.620.suffix/1383814656806.jpeg" alt=""><br><a class="title"> Chipotle Southwest</a><br><a class="price"> Rs.25<br></a>
+                    <input class="click" type="checkbox" name="Sauce" id="sauce2" value="Chipotle Southwest">    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://d104wv11b7o3gc.cloudfront.net/wp-content/uploads/2018/12/tzatziki-cucumber-sauce-5.jpg" alt=""><br><a class="title"> Tzatziki Cucumber</a><br><a class="price"> Rs.15<br></a>
+                    <input class="click" type="checkbox" name="Sauce" id="sauce3" value="Tzatziki Cucumber">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://www.weightwatchers.com/images/1033/dynamic/foodandrecipes/2012/12/CreamyItalianSaladDressing_101_xl.jpg" alt=""><br><a class="title"> Creamy<br>Italian </a><br><a class="price"> Rs.15<br></a>
+                    <input class="click" type="checkbox" name="Sauce" id="sauce4" value="Creamy">    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/recipes/99/02/3/qelj4kmdRi615jfDNXZC_038-memphis-bbq-sauce.jpg" alt=""><br><a class="title"> Barbecue <br> Sauce</a><br><a class="price"> Rs.15<br></a>
+                    <input class="click" type="checkbox" name="Sauce" id="sauce5" value="Barbecue">    
+                    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://topsecretrecipes.com/images/product/subway-sweet-onion-sauce-copycat-recipe.jpg" alt=""><br><a class="title"> Sweet Onion Sauce</a><br><a class="price"> Rs.20<br></a>
+                    <input class="click" type="checkbox" name="Sauce" id="sauce6" value="Sweet Onion Sauce">
+                </td>
+            </tr>
+            <tr class="Salad-Vegetables">
+                <td class="cell">Salad and Vegetables</td>
+                <td class="cell">
+                    <img class="zoom" src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/283/283006/sliced-cucumber-with-lots-of-health-benefits.jpg?w=1155&h=1444" alt=""><br><a class="title"> Cucumbers</a><br><a class="price"> Rs.15<br></a>
+                    <input class="click" type="checkbox" name="sv" id="sv1" value="Cucumbers">    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5I06aT-bcmjBqC5grJUACKNeG_ifXJD9nww&usqp=CAU" alt=""><br><a class="title"> Lettuce</a><br><a class="price"> Rs.10<br></a>
+                    <input class="click" type="checkbox" name="sv" id="sv2" value="Lettuce">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://bonnieplants.com/wp-content/uploads/solar-fire-tomato.jpg" alt=""><br><a class="title"> Tomato</a><br><a class="price"> Rs.10<br></a>
+                    <input class="click" type="checkbox" name="sv" id="sv3" value="Tomato">    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://comps.canstockphoto.com/chopped-black-olives-stock-photos_csp35932838.jpg" alt=""><br><a class="title"> Black Olives</a><br><a class="price"> Rs.15<br></a>
+                    <input class="click" type="checkbox" name="sv" id="sv4" value="Black Olives">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://picklelicious.com/store/wp-content/uploads/2014/07/sweetpicklechips.jpg" alt=""><br><a class="title"> Pickle chips</a><br><a class="price"> Rs.10<br></a>
+                    <input class="click" type="checkbox" name="sv" id="sv5" value="Pickle chips">  
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://www.myhotsouthernmess.com/wp-content/uploads/2017/08/pickled-jalapeno-5-1024x819.png" alt=""><br><a class="title"> Jalapeños</a><br><a class="price"> Rs.10<br></a>
+                    <input class="click" type="checkbox" name="sv" id="sv6" value="Jalapeños">  
+                </td>
+            </tr>
+            <tr class="patty">
+                <td class="cell">Patty</td>
+                <td class="cell">
+                    <img class="zoom" src="https://www.subway.com/ns/images/menu/IND/ENG/new%20RPLC-AlooPatty_594_334.jpg" alt=""><br><a class="title"> Aloo Patty</a><br><a class="price"> Rs.40<br></a>
+                    <input class="click" type="radio" name="patty" id="patty1" value="Aloo Patty">
+                    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://www.subway.com/ns/images/menu/IND/ENG/Chicken%20Kofta_594x334.jpg" alt=""><br><a class="title"> Chicken Kofta</a><br><a class="price"> Rs.40<br></a>
+                    <input class="click" type="radio" name="patty" id="patty2" value="Chicken Kofta">
+                    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://www.subway.com/ns/images/menu/IND/ENG/new%20RPLC-HaraBhara%20Kebab_594%20x%20334.jpg" alt=""><br><a class="title"> Hara Bhara<br>Kebab<br></a><a class="price"> Rs.45<br></a>
+                    <input class="click" type="radio" name="patty" id="patty3" value="Hara Bhara">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://www.subway.com/ns/images/menu/IND/ENG/new%20RPLC-mexican-bean-patty_594%20x%20334.jpg" alt=""><br><a class="title"> Mexican Patty</a><br><a class="price"> Rs.45<br></a>
+                    <input class="click" type="radio" name="patty" id="patty4" value="Mexican Patty">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://www.subway.com/ns/images/menu/IND/ENG/new%20RPLC-PaneerTikka_594%20x%20334.jpg" alt=""><br><a class="title"> Panner Tikka</a><br><a class="price"> Rs.50<br></a>
+                    <input class="click" type="radio" name="patty" id="patty5" value="Panner Tikka">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://www.subway.com/ns/images/menu/IND/ENG/new%20RPLC-VegShammi_594%20x%20334.jpg" alt=""><br><a class="title"> Veg Shammi Kebab</a><br><a class="price"> Rs.45<br></a>
+                    <input class="click" type="radio" name="patty" id="patty6" value="Veg Shammi Kebab">
+                </td>
+            </tr>
+        </table>
+        <div class="btn-div">
+            <input class="btn4" type="submit" value="Buy" style="width: 200px;font-size: 20px;">
+        </div>
+        
+    </form>
+
+
+    <section id="cart" class="container content-section">
+         <br> <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:gray"> <hr  style="height:2px;border-width:0;color:gray;background-color:rgb(255, 255, 255)">  <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)"> <hr style="border-width:0;color:gray;background-color:gray"><br>
+        
+        <h2 style="color: white;font-family:Georgia, 'Times New Roman', Times, serif;text-align: center;">CART</h2> <br><br>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            
+            </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">Rs.0</span>
+        </div> <br><br>
+        <button class="btn4" type="button"><a style="text-decoration: none; color:black;" href="purchase.html">PURCHASE ITEMS</a></button> <br><br>
+        <br><br> <br> <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:gray"> <hr  style="height:2px;border-width:0;color:gray;background-color:rgb(255, 255, 255)">  <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)"> <hr style="border-width:0;color:gray;background-color:gray"><br>
+   
+    </section>
+          
+    
+       
+    
+
+
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="store.js" async></script>
+    <style>
+        html{
+    scroll-behavior: smooth;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul style="background-color: black; opacity:0.85 ; color: rgb(255, 218, 153); font-size: x-large; padding-top: 20px; ">
+            <li style="display:inline; text-align: center;" ><a style="background-color: black; color: rgb(255, 255, 255); padding-left:10px">seu-lanche-Sandwich</a></li> 
+            
+            <li style="display:inline; text-align: center;" ><a style="background-color: black; color: rgb(255, 255, 255); padding-left:400px" href="landing.html"><i class="fa fa-home fa-fw"></i> Home</a></li> 
+            <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:20px" href="about.html"><i class="fa fa-book"></i> About</a></li>
+            <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:20px" href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+            <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:20px" href="#cart"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+            <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:30px" href="login.html"><i class="fa fa-user"></i>Login</a></li>
+        <br><br>
+        </ul>
+    </nav>
+ <showcase>
+        <div class="container">
+            <h1>"TODAY'S SPECIAL FOR YOU"</h1>
+            <h2>Food tastes better when you eat it with your family</h2>
+            <div class="category">
+                <div class="first">
+                    <img class="img" src="Images/sand2.jpg" alt="">
+                    <h4 class="title">Avocado Grilled Cheesey</h4>
+                    <p>SO creamy and cheesy!</p>
+                    <h3 class="price">Rs.129</h3><br>
+                    <button class="add btn1" type="button" style="position: relative; right: 40px;">Add to cart</button>
+                </div>
+                <div class="first">
+                    <img class="img" src="Images/sand1.jpg" alt="">
+                    <h4 class="title">Greek Grilled Cheese</h4>
+                    <p>This is the most flavorful grilled cheese EVER</p>
+                    <h3 class="price">Rs.150</h3>
+                    <button class="add btn2" type="button" style="position: relative; right: 70px; margin-top: 20px; width: 100px;">Add to cart</button>
+                </div>
+                <div class="first">
+                    <img class="img" src="Images/sand3.jpg" alt="">
+                    <h4 class="title">Best Grilled Cheese Sandwich</h4>
+                    <p>You can't beat a grilled cheese sandwich and tomato soup.</p>
+                    <h3 class="price">Rs.180</h3>
+                    <button class="add btn3" type="button" style="position: relative; right: 80px; width: 100px; margin-top: 20px;" >Add to cart</button>
+                </div>
+                
+            </div>
+        </div>
+    </showcase> 
+     
+      <br> <br> 
+       <a href="sandmenu.html"><button class="btn4" type="button" style="position: relative;right: 25px;">Want to make manually</button></a>
+
+
+       <br><br> <br> <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:gray"> <hr  style="height:2px;border-width:0;color:gray;background-color:rgb(255, 255, 255)">  <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)"> <hr style="border-width:0;color:gray;background-color:gray"><br><br>
+        
+       <section id="cart">
+        <br><br>
+        <h2 style="color: white;font-family:Georgia, 'Times New Roman', Times, serif;text-align: center;">CART</h2><br><br><br>
+        <div class="cart-row">
+            <span style="padding-left: 10px;" class="cart-item cart-header cart-column">ITEM</span>
+            <span style="padding-left: 10px;" class="cart-price cart-header cart-column">PRICE</span>
+            <span style="padding-left: 10px;" class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">Rs 0</span>
+        </div>
+        <button class="btn4" type="button"><a style="text-decoration: none; color:black;" href="purchase.html">PURCHASE ITEMS</a></button><br><br><br>
+    </section>
+          
+    
+    <br> <br> <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:gray"> <hr  style="height:2px;border-width:0;color:gray;background-color:rgb(255, 255, 255)">  <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)"> <hr style="border-width:0;color:gray;background-color:gray"><br><br><br>
+       
+    
+                           
+    
+</body>
+</html>

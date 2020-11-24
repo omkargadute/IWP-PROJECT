@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="manual.js" async></script>
+    <style>
+         html{
+    scroll-behavior: smooth;
+}
+        .zoom{
+            transition: transform .2s;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(231, 228, 176);
+        }
+        .zoom:hover {
+  -ms-transform: scale(1.75); 
+  -webkit-transform: scale(1.75); 
+  transform: scale(1.75); 
+  
+}
+    </style>
+</head>
+<body style="background-color: rgb(255, 214, 153);">
+    <ul style="background-color: black; opacity:0.6 ; color: rgb(255, 218, 153); font-size: x-large; padding-top: 20px; ">
+        <li style="display:inline; text-align: center;" ><a style="background-color: black; color: rgb(255, 255, 255); padding-left:10px">Burger-Builder</li> 
+        
+        <li style="display:inline; text-align: center;" ><a style="background-color: black; color: rgb(255, 255, 255); padding-left:400px" href="landing.html"><i class="fa fa-home fa-fw"></i> Home</a></li> 
+        <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:30px" href="about.html"><i class="fa fa-book"></i> About</a></li>
+        <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:30px" href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+        <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:30px" href="#cart"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+        <li style="display:inline"><a style="background-color: black; color: rgb(255, 255, 255); padding-left:30px" href="login.html"><i class="fa fa-user"></i>Login</a></li>
+    <br><br>
+    </ul>
+    
+    <h2 style="color: ivory; text-align: center;">Customise Your Own Burger</h2>
+    <form action="" method="post" class="demoForm" id="demoForm" onsubmit='getScore(this);'>
+        <table class="table-container">
+            <tr class="bread">
+                <td class="cell">Choose Bun</td>
+                <td class="cell"> 
+                    <img class="zoom" src="https://perfectpattyshaperz.com/wp-content/uploads/2019/10/Pretzel-Bun-600x678.png" alt=""><br><a class="title">Pretzel Bun</a><br><a class="price"> Rs.50</a><br>
+                    <input class="click" type="radio" name="bread" id="bun1">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://perfectpattyshaperz.com/wp-content/uploads/2019/10/Kaiser-Roll.jpg" alt=""><br><a class="title">Kaiser Roll</a><br><a class="price">Rs.55</a><br>
+                    <input class="click"  type="radio" name="b" id="bread2"> </td>
+                <td class="cell"> 
+                    <img class="zoom" src="https://perfectpattyshaperz.com/wp-content/uploads/2019/10/brioche-bun-1-600x401.png" alt=""><br><a class="title">Brioche Bun</a><br><a class="price">Rs.55</a><br>
+                    <input class="click"  type="radio" name="bread" id="bread3"> </td>
+                <td class="cell"> <br>
+                    <img class="zoom" src="https://perfectpattyshaperz.com/wp-content/uploads/2019/10/Potato-Bun-600x600.jpg" alt=""><a class="title">Potato Bun</a><br><a class="price">Rs.40<br></a>
+                    <input class="click"  type="radio" name="bread" id="bread4"> </td>
+                <td class="cell">
+                    <img class="zoom" src="https://perfectpattyshaperz.com/wp-content/uploads/2019/10/Onion-Bun-600x450.jpg" alt=""><br><a class="title">Onion Bun</a><br><a class="price"> Rs.55</a><br>  
+                    <input class="click"  type="radio" name="bread" id="bread5"> </td>
+                <td class="cell"> <br>                
+                    <img class="zoom" src="https://perfectpattyshaperz.com/wp-content/uploads/2019/10/Sesame-Seed-Bun-600x400.jpg" alt=""><br><a class="title">Sesam Seed Bun</a><br><a class="price">Rs.60</a><br>
+                    <input class="click"  type="radio" name="bread" id="bread6"> </td>
+            </tr>
+            <tr class="sauce">
+                <td class="cell">Choose Spread</td>
+                <td class="cell">
+                    <img class="zoom" src="https://cdn.cheapism.com/images/Gochujang.max-784x410.jpg" alt=""><br><a class="title">Gochujang</a> <br><a class="price"> Rs.10</a><br>
+                    <input class="click" type="checkbox" name="Sauce" id="sauce1">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fupdated_main_images%2F1307p87-spicy-remoulade-x.jpg%3Fitok%3D9o2VR0K-&w=1200&c=sc&poi=face&q=85" alt=""><br><a class="title">Spicy Rémoulade </a><br><a class="price"> Rs.20</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sauce3">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fupdated_main_images%2F1307p87-garlicky-mayo-x.jpg%3Fitok%3DX3Ycz4G7&w=1200&c=sc&poi=face&q=85" alt=""><br><a class="title"> Garlicky Mayo </a> <br><a class="price"> Rs.10</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sauce4">    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://cdn.cheapism.com/images/062917_burger_topping_grilling_ideas_slide_1.max-784x410_p1eh4hd.jpg" alt=""><br><a class="title">Hoisin Sauce</a> <br><a class="price"> Rs.25</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sauce2">    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fupdated_main_images%2F1307p87-herbed-mayo-x.jpg%3Fitok%3DO-gb7HHj&w=1200&c=sc&poi=face&q=85" alt=""><br><a class="title">Herbed Mayo</a>  <br><a class="price"> Rs.10</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sauce5">    
+                    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fupdated_main_images%2F1307p87-sriracha-sauce-x.jpg%3Fitok%3Dwpw1hMZ8&w=1200&c=sc&poi=face&q=85" alt=""><br><a class="title">Sriracha Sauce</a> <br><a class="price"> Rs.15</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sauce6">
+                </td>
+            </tr>
+            <tr class="Patty-Toppings">
+                <td class="cell">Combo of Topping you want</td>
+                <td class="cell">
+                    <img class="zoom" src="https://cdn.cheapism.com/images/Fried_Onions_Burger.max-784x410.jpg" alt=""><br><a class="title">Fried Onions</a><br><a class="price"> Rs.15</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sv1">    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://cdn.cheapism.com/images/Tzatziki_Burger.max-784x410.jpg" alt=""><br><a class="title">Tzatziki</a><br><a class="price"> Rs.20</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sv2">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://cdn.cheapism.com/images/062917_burger_topping_grilling_ideas_slide_1.max-784x410_fSuCTsn.jpg" alt=""><br><a class="title">Peanut Sauce</a><br><a class="price"> Rs.15</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sv3">    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://cdn.cheapism.com/images/Kimchi.max-784x410.jpg" alt=""><br><a class="title">Kimchi</a><br><a class="price"> Rs.20</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sv4">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://cdn.cheapism.com/images/062917_burger_topping_grilling_ideas_slide_7.max-784x410.jpg" alt=""><br><a class="title">Grilled Pineapple and Ham</a><br><a class="price"> Rs.20</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sv5">  
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://cdn.cheapism.com/images/Coleslaw_Burger.max-784x410.jpg" alt=""><br><a class="title">Coleslaw</a><br><a class="price"> Rs.15</a><br>
+                    <input class="click" type="checkbox" name="bread" id="sv6">  
+                </td>
+            </tr>
+            <tr class="patty">
+                <td class="cell">Patty</td>
+                <td class="cell">
+                    <img class="zoom" src="https://eatingwelllivingthin.files.wordpress.com/2010/11/blog-58.jpg" alt=""><br><a class="title">QUINOA BURGER</a><br><a class="price"> Rs.35</a><br>
+                    <input class="click" type="radio" name="bread" id="patty1">
+                    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portobello-mushroom-burger-vertical-1534176511.png?crop=1xw:1xh;center,top&resize=980:*" alt=""><br><a class="title">Cheesy Portobello</a> <br><a class="price"> Rs.40</a><br>
+                    <input class="click" type="radio" name="bread" id="patty2">
+                    
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://pomanmeals.com/wp-content/uploads/2013/02/broccoli-pattieswm-1024x768.jpg" alt=""><br>Cheesy roasted <br><a class="title">broccoli pattie</a> <br><a class="price"> Rs.40</a><br>
+                    <input class="click" type="radio" name="bread" id="patty3">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://afewshortcuts.com/wp-content/uploads/2013/04/Cheesy-Zucchini-Cakes.png" alt=""><br><a class="title">Cheesy Zucchini<br><a class="price"> Rs.35</a><br>
+                    <input class="click" type="radio" name="bread" id="patty4">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjBdi9Q1iQ3ttwqXYIrhycXVjgGPgjFEVZjw&usqp=CAU" alt=""><br><a class="title">Panner Tikka</a><br><a class="price"> Rs.40</a><br>
+                    <input class="click" type="radio" name="bread" id="patty5">
+                </td>
+                <td class="cell">
+                    <img class="zoom" src="https://ahouseinthehills.com/wp-content/uploads/2014/01/sweet_potato_quinoa_patties_a_house_in_the_hills_4.jpg" alt=""><br><a class="title">sweet potato quinoa patties</a><br><a class="price"> Rs.35</a><br>
+                    <input class="click" type="radio" name="bread" id="patty6">
+                </td>
+            </tr>
+        </table>
+        <div class="btn-div">
+        <input class="ne btn4" type="submit" value="Buy"  style="width: 200px;font-size: 20px;"  >
+        </div>
+        
+    </form>
+<br><br>
+<br><br> <br> <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:gray"> <hr  style="height:2px;border-width:0;color:gray;background-color:rgb(255, 255, 255)">  <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)"> <hr style="border-width:0;color:gray;background-color:gray"><br><br>
+    
+<section id="cart" >
+    <br><br><br><br>
+    <h2 style="color: white;font-family:Georgia, 'Times New Roman', Times, serif;text-align: center;">CART</h2><br><br>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+        
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">Rs.0</span>
+    </div>
+    <button class="btn4" type="button"><a style="text-decoration: none; color:black;" href="purchase.html">PURCHASE ITEMS</a></button><br><br><br><br>
+</section>
+<br><hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:gray"> <hr  style="height:2px;border-width:0;color:gray;background-color:rgb(255, 255, 255)">  <hr style="height:2px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)"> <hr style="border-width:0;color:gray;background-color:gray"><br><br><br>
+   
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
